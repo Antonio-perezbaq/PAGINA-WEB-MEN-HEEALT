@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de enlazar tu archivo CSS -->
+    <title>Servicios - Men Health Care</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo de Men Health Care">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-item" data-page="home">Inicio</a></li>
+                <li><a href="#" class="menu-item" data-page="about">Quienes somos</a></li>
+                <li><a href="#" class="menu-item" data-page="contact">Contactanos</a></li>
+                <li><a href="#" class="menu-item active" data-page="services">Servicios</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a class="btn btn-success" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</a>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="text-center">Nuestros Servicios</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="psicologia.png" class="card-img-top" alt="Psicología">
+                    <div class="card-body">
+                        <h5 class="card-title">Psicología</h5>
+                        <p class="card-text">Orientar profesionalmente a las personas a reconocer y abordar cuestiones que afectan su bienestar mental.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="psiquiatra.png" class="card-img-top" alt="Psiquiatría">
+                    <div class="card-body">
+                        <h5 class="card-title">Psiquiatría</h5>
+                        <p class="card-text">Nuestro equipo de psiquiatras está capacitado para diagnosticar y tratar trastornos mentales a través de un enfoque integral.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <img src="trabajosocial.png" class="card-img-top" alt="Trabajo Social">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabajo Social</h5>
+                        <p class="card-text">Asesorar y orientar a las personas, familias y comunidades en situaciones adversas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer style="background-color: #6a5acd; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Men Health Care . Todos los derechos reservados.</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="display: inline; margin: 0 15px;"><a href="#" style="color: white; text-decoration: none;">Inicio</a></li>
+            <li style="display: inline; margin: 0 15px;"><a href="#" style="color: white; text-decoration: none;">Acerca de</a></li>
+            <li style="display: inline; margin: 0 15px;"><a href="#" style="color: white; text-decoration: none;">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
